@@ -191,11 +191,11 @@ const applyDialogue = (dialogue) => {
     ];
 
   const actor = document.querySelector(".actor-name");
-  const body = document.querySelector("body");
+  const wrapper = document.querySelector(".wrapper");
   const text = document.querySelector(".dialogue-text");
 
   actor.innerHTML = dialogue.actor;
-  body.style.backgroundImage = `url("./assets/images/${randomBackground}")`;
+  wrapper.style.backgroundImage = `url("./assets/images/${randomBackground}")`;
   text.innerHTML = dialogue.line;
 };
 

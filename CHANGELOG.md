@@ -9,6 +9,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 ### Fixed
 
 - Dialogue box not rendering properly on mobile devices
+- Scrollbars rendering on mobile devices
 
 ## [2022-11-09]
 
