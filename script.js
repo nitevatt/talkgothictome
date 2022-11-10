@@ -192,7 +192,7 @@ const applyDialogue = (dialogue) => {
 
   const actor = document.querySelector(".actor-name");
   const body = document.querySelector("body");
-  const text = document.querySelector(".dialog-text");
+  const text = document.querySelector(".dialogue-text");
 
   actor.innerHTML = dialogue.actor;
   body.style.backgroundImage = `url("./assets/images/${randomBackground}")`;

@@ -20,7 +20,7 @@ body {
   width: 100vw;
 }
 
-.dialog-box {
+.dialogue-box {
   background-color: #00000077;
   box-sizing: border-box;
   color: #e0e0e0;
@@ -29,6 +29,6 @@ body {
   text-align: center;
 }
 
-.dialog-text {
+.dialogue-text {
   color: #e0e042;
 }
