@@ -206,3 +206,7 @@ document.addEventListener("keyup", (e) => {
     applyDialogue(getRandomDialogue());
   }
 });
+
+document.addEventListener("touchend", () => {
+  applyDialogue(getRandomDialogue());
+});
