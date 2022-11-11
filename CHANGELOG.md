@@ -7,9 +7,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## Unreleased
 
+## [0.1.0] - 2022-11-11
+
 ### Changed
 
 - Use [Vite](https://vitejs.dev/) as the bundler
+
+### Fixed
+
+- Assets not displaying correctly because of the invalid base url
 
 ## [0.0.2] - 2022-11-10
 
