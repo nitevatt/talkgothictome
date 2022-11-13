@@ -9,3 +9,7 @@ document.addEventListener(
 );
 
 document.addEventListener("touchend", () => renderDialogue());
+
+window.addEventListener("orientationchange", () =>
+  setTimeout(renderDialogue, 50)
+);

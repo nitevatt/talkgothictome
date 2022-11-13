@@ -4,32 +4,26 @@
 }
 
 body {
-  font-family: "Gothic2";
-  line-height: 2;
   margin: 0;
 }
 
-.wrapper {
-  align-items: flex-start;
-  background-position: center center;
-  background-size: cover;
-  box-sizing: border-box;
+canvas {
+  display: block;
+}
+
+.flex {
+  bottom: 1rem;
+  color: #e0e0e0;
   display: flex;
-  height: 100%;
-  padding: 2.5rem 15vw;
-  position: absolute;
+  font-family: sans-serif;
+  justify-content: center;
+  position: fixed;
+  text-align: center;
   width: 100%;
 }
 
-.dialogue-box {
-  background-color: #00000077;
-  box-sizing: border-box;
-  color: #e0e0e0;
-  flex: 1 1 auto;
-  padding: 1.75rem;
-  text-align: center;
-}
-
-.dialogue-text {
-  color: #e0e042;
+.hint {
+  background: #00000077;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
 }
