@@ -18,7 +18,10 @@ const applyDialogue = (dialogue) => {
     dialogue.backgrounds[getRandomNumber(dialogue.backgrounds.length)];
 
   background.onload = () => {
-    const ratio = canvas.height / background.height;
+    const ratio =
+      canvas.width > canvas.height
+        ? canvas.width / background.width
+        : canvas.height / background.height;
 
     ctx.drawImage(
       background,
@@ -27,7 +30,7 @@ const applyDialogue = (dialogue) => {
       background.width,
       background.height,
       (canvas.width - background.width * ratio) / 2,
-      0,
+      (canvas.height - background.height * ratio) / 2,
       background.width * ratio,
       background.height * ratio
     );

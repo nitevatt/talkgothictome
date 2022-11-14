@@ -8,8 +8,5 @@ document.addEventListener(
   (e) => e.code === "Space" && renderDialogue()
 );
 
-document.addEventListener("touchend", () => renderDialogue());
-
-window.addEventListener("orientationchange", () =>
-  setTimeout(renderDialogue, 50)
-);
+document.addEventListener("touchend", renderDialogue);
+window.addEventListener("resize", renderDialogue);
