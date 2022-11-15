@@ -13,6 +13,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Render dialogue scene inside image element for easier copy/paste or long tap and share
 
+## [0.1.1] - 2022-11-11
+
+### Fixed
+
+- Font not displaying correctly
+
 ## [0.1.0] - 2022-11-11
 
 ### Changed
