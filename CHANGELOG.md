@@ -7,6 +7,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## Unreleased
 
+## [0.2.0] - 2022-11-15
+
+### Changed
+
+- Render dialogue scene inside image element for easier copy/paste or long tap and share
+
 ## [0.1.0] - 2022-11-11
 
 ### Changed
