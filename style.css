@@ -7,7 +7,7 @@ body {
   margin: 0;
 }
 
-canvas {
+img {
   display: block;
 }
 
@@ -17,6 +17,7 @@ canvas {
   display: flex;
   font-family: sans-serif;
   justify-content: center;
+  pointer-events: none;
   position: fixed;
   text-align: center;
   width: 100%;

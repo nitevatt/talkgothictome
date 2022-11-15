@@ -5,12 +5,28 @@ const getRandomDialogue = () => {
   return data[getRandomNumber(data.length)];
 };
 
+const getImg = () => {
+  let img = document.querySelector("img");
+
+  if (!img) {
+    img = document.createElement("img");
+
+    img.alt = "Dialogue scene";
+
+    document.querySelector("body").prepend(img);
+  }
+
+  return img;
+};
+
 const applyDialogue = (dialogue) => {
-  const canvas = document.querySelector("canvas");
+  const img = getImg();
+
+  const canvas = document.createElement("canvas");
   const ctx = canvas.getContext("2d");
 
-  canvas.width = window.innerWidth;
-  canvas.height = window.innerHeight;
+  canvas.width = img.width = window.innerWidth;
+  canvas.height = img.height = window.innerHeight;
 
   const background = new Image();
 
@@ -18,10 +34,10 @@ const applyDialogue = (dialogue) => {
     dialogue.backgrounds[getRandomNumber(dialogue.backgrounds.length)];
 
   background.onload = () => {
-    const ratio =
-      canvas.width > canvas.height
-        ? canvas.width / background.width
-        : canvas.height / background.height;
+    const wRatio = canvas.width / background.width;
+    const hRatio = canvas.height / background.height;
+
+    const ratio = wRatio > hRatio ? wRatio : hRatio;
 
     ctx.drawImage(
       background,
@@ -70,6 +86,8 @@ const applyDialogue = (dialogue) => {
         maxTextWidth
       );
     });
+
+    img.src = canvas.toDataURL();
   };
 };
 

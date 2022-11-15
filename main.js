@@ -1,12 +1,6 @@
 import "./style.css";
 import { renderDialogue } from "./utils";
 
-renderDialogue();
-
-document.addEventListener(
-  "keyup",
-  (e) => e.code === "Space" && renderDialogue()
-);
-
-document.addEventListener("touchend", renderDialogue);
+document.addEventListener("click", renderDialogue);
 window.addEventListener("resize", renderDialogue);
+document.fonts.load("1em Gothic2").then(renderDialogue);
